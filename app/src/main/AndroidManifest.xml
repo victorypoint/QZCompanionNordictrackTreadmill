@@ -18,6 +18,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QZCompanionNordictrackTreadmill">
         <service android:name=".QZService" />
+        <service android:name=".QZJobService"
+            android:label="QZ Job service"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"
+            />
+
         <receiver android:enabled="true" android:name=".BootUpReceiver"
             android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
             <intent-filter>
